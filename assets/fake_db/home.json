@@ -1,0 +1,76 @@
+{
+    "recommended": [
+        {
+            "hotel_name": "Cima Park",
+            "price": "3M",
+            "rooms": "2BD/1BA 2 bedrooms",
+            "location": "Av. Paseo La Toscana 122",
+            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F07%2F20%2Foberoi-udaivilas-008-TOPHOTELSWB21.jpg",
+            "label": "Dev n"
+        },
+        {
+            "hotel_name": "Four Seasons Resort",
+            "price": "5M",
+            "rooms": "1BD/2BA 4 bedrooms",
+            "location": "Masai Mara",
+            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F07%2F20%2Ftop-hotels-mahali-mzuri-000-TOPHOTELSWB21.jpg",
+            "label": "New Dev"
+        },
+        {
+            "hotel_name": "Happy Stay",
+            "price": "9M",
+            "rooms": "5BD/2BA 1 bedrooms",
+            "location": "Arenal Volcano National Park",
+            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F07%2F20%2Fnayara-tented-camp-002-TOPHOTELSWB21.jpg",
+            "label": "New Dev"
+        },
+        {
+            "hotel_name": "Town and Country",
+            "price": "1M",
+            "rooms": "3BD/6BA 1 bedrooms",
+            "location": "Capella Bangkok",
+            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F07%2F20%2Fcapella-ubud-005-TOPHOTELSWB21.jpg",
+            "label": "New Dev"
+        },
+        {
+            "hotel_name": "Quick Stop",
+            "price": "2M",
+            "rooms": "1BD/3BA 3 bedrooms",
+            "location": "Auberge Resorts Collection",
+            "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F07%2F20%2Fgrace-hotel-006-TOPHOTELSWB21.jpg",
+            "label": "New Dev"
+        }
+    ],
+    "top_devlopers": [
+        {
+            "name": "Donald Glover",
+            "year_est": "2020",
+            "properties": "0",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88dvv6Z3KXPw39-uUSt4Lm3NRkTcYxFYC5Ch_Kc8nJSa11kzf5eKkjLmLtJ44zUSJjC8&usqp=CAU"
+        },
+        {
+            "name": "Seth Rogan",
+            "year_est": "2022",
+            "properties": "6",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbkEcO_RUUrU52KVo3fXkOzcihO2H3Wg34g&usqp=CAU"
+        },
+        {
+            "name": "Tobey Maguire ",
+            "year_est": "2012",
+            "properties": "2",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqU5THSb9DBvqE7EF8gPkINCNUJLDmcclJRQ&usqp=CAU"
+        },
+        {
+            "name": "Hayley McFarland",
+            "year_est": "1998",
+            "properties": "3",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8AnmfW4cWRMRXB52oCoMr0_87Znu69a1JA&usqp=CAU"
+        },
+        {
+            "name": "Mark Zuckerberg",
+            "year_est": "2008",
+            "properties": "20",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfok56Tsvp74XKc325Ks2OIfYX7B8uaidizQ&usqp=CAU"
+        }
+    ]
+}
