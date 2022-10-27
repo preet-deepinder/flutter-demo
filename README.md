@@ -1,4 +1,4 @@
-# flyy_test_task
+# Flutter Demo Project
 
 A new Flutter project.
 
