@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flyy_test_task/constants/constants.dart';
+import 'package:flyy_test_task/network/network_exception.dart';
 import 'package:flyy_test_task/ui/home/network/mock_repo.dart';
 import 'package:flyy_test_task/ui/home/network/model/home_model.dart';
 import 'package:flyy_test_task/ui/home/network/model/search_model.dart';
@@ -13,9 +14,12 @@ class HomeNotifier extends ChangeNotifier {
   final MockRepo _mockRepo = MockRepo();
   final PageController _viewpageController = PageController();
 
+  String? _failure, _exception;
   HomeResModel? _mockData;
   SearchResModel? _photoData;
 
+  String? get failure => _failure;
+  String? get exception => _exception;
   HomeResModel? get localData => _mockData;
   SearchResModel? get networkData => _photoData;
   PageController get viewpageController => _viewpageController;
@@ -34,6 +38,7 @@ class HomeNotifier extends ChangeNotifier {
   }
 
   Future<void> fetchData() async {
+    _failure = null;
     showLoader();
     await getLocalData();
     await getNetworkData();
@@ -45,7 +50,15 @@ class HomeNotifier extends ChangeNotifier {
   }
 
   Future<void> getNetworkData() async {
-    _photoData = await _mockRepo.networkCall();
+    try {
+      _photoData = await _mockRepo.networkCall();
+    } on Failure catch (f) {
+      _failure = f.msg;
+      hideLoader();
+    } catch (e) {
+      _exception = e.toString();
+      hideLoader();
+    }
   }
 
   void onNext() {

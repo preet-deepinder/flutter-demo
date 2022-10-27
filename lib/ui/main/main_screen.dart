@@ -33,7 +33,7 @@ class MainScreen extends ConsumerWidget {
             size: AppDimension.defaultIconSize,
             color: AppColor.white,
           ),
-        )
+        ),
       ],
     );
 

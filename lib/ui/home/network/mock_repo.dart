@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flyy_test_task/constants/constants.dart';
 import 'package:flyy_test_task/network/client/network_client.dart';
+import 'package:flyy_test_task/network/network_exception.dart';
 import 'package:flyy_test_task/ui/home/network/model/home_model.dart';
 import 'package:flyy_test_task/ui/home/network/model/search_model.dart';
 
@@ -18,19 +19,15 @@ class MockRepo {
   }
 
   Future<SearchResModel> networkCall() async {
-    try {
-      final response = await NetworkClient.getInstance().get(
-        AppConstant.search,
-        queryParameters: {'q': 'car'},
-      );
+    final response = await NetworkClient.getInstance().get(
+      AppConstant.search,
+      queryParameters: {'q': 'car'},
+    );
 
-      if (response.statusCode == HttpStatus.ok) {
-        return SearchResModel.fromJson(response.data);
-      } else {
-        throw response.data;
-      }
-    } catch (e) {
-      throw Exception(e);
+    if (response.statusCode == HttpStatus.ok) {
+      return SearchResModel.fromJson(response.data);
+    } else {
+      throw Failure('something went wrong');
     }
   }
 }
